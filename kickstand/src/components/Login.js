@@ -1,9 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
 import {
   AppRegistry,
@@ -11,13 +5,14 @@ import {
   Text,
   View
 } from 'react-native';
-import Index from './src/index';
 
-export default class kickstand extends Component {
+export default class Login extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Index />
+        <Text style={styles.welcome}>
+          Welcome Login!
+        </Text>
       </View>
     );
   }
@@ -29,7 +24,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#2CDA9D',
+  },
+  welcome: {
+    fontSize: 40,
+    textAlign: 'center',
+    margin: 10,
+    color: 'white'
   }
 });
 
-AppRegistry.registerComponent('kickstand', () => kickstand);
+AppRegistry.registerComponent('Login', () => Login);
